@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Token</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .token {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2ecc71;
+        }
+
+        .instructions {
+            margin-top: 20px;
+            color: #555555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Login Token</h2>
+        </div>
+        <div class="content">
+            <p>Hello {{name}},</p>
+            <p>Your login token is: <span class="token">{{token}}</span></p>
+            <p class="instructions">Please enter this token to complete the login process.</p>
+        </div>
+        <div class="footer">
+            <p>Best regards,<br>Your App Team</p>
+        </div>
+    </div>
+</body>
+
+</html>
